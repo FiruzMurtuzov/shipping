@@ -1,0 +1,989 @@
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: all;
+        background-color: rgb(36, 36, 36);
+        
+        overflow-y: hidden;
+        color: white;
+        font-weight: 800;
+    }
+    @font-face {
+        font-family: all;
+        src: url(Poppins-Medium.ttf);
+    }
+    footer{
+    font-size: 10px;
+    margin-top: 90vh;
+    width: 200px;
+    margin-left: 5vw;
+    height: 30px;
+    }
+    .btn .button,.button1 , .button3{
+    width: 15vw;
+    border-radius: 10px;
+    margin-left: 42.5vw;
+    margin-top: 5vh;
+    height:10vh;
+    border: 0;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    transition: 0.3s;
+    filter: blur(0);
+    font-weight: 800;
+
+
+    }
+    .button3{
+        animation-name: shake, glow-red;
+    animation-duration: 0.7s, 0.35s;
+    animation-iteration-count: 1, 2;
+    font-weight: 800;
+
+
+    }
+    @keyframes shake {
+        0%, 20%, 40%, 60%, 80% {
+        transform: translateX(8px);
+        }
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+        transform: translateX(-8px);
+        }
+    }
+    
+    @keyframes glow-red {
+        50% {
+        border-color: indianred;
+        }
+    }
+    .button2{
+        width: 15vw;
+    border-radius: 10px;
+    margin-left: 42.5vw;
+    margin-top: 5vh;
+    height:10vh;
+    border: 0;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    transition: 0.3s;
+    filter: blur(14px);
+
+    font-weight: 800;
+    }
+    .button:hover{
+        transform: scale(1.1);
+        opacity: 0.7;
+
+        box-shadow: 5px 5px 20px rgb(122, 122, 122);
+    }
+    .button1:hover{
+        transform: scale(1.1);
+        opacity: 0.7;
+
+        box-shadow: 5px 5px 20px rgb(122, 122, 122);
+    }
+    .form,.form1{  
+        background-color: rgb(53, 53, 53);
+        width: 28vw;
+        height: 40vh;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 36vw;
+        border-radius: 17px;
+        align-items: center;
+        box-shadow: 5px 5px 20px rgb(122, 122, 122);
+        font-weight: 800;
+    display: none;
+    
+    }
+    .form2{
+        display: block;
+        background-color: rgb(53, 53, 53);
+        font-weight: 800;
+        width: 28vw;
+        height: 40vh;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 36vw;
+        border-radius: 17px;
+        align-items: center;
+        box-shadow: 5px 5px 20px rgb(122, 122, 122);
+        animation: formcome 0.5s;
+        margin-top: -100px;
+        animation-fill-mode: forwards;
+    }
+    @keyframes formcome{
+    
+        to{
+            transform: translateY(100px);
+            
+        }
+    }
+    .form2 input{
+        background: none;
+        border: none;
+        height: 5vh;
+        font-weight: 800;
+    
+        outline: none;
+        text-align: center;
+        color:rgb(255, 255, 255);
+        font-size: 15px;
+        width: 15vw;
+        margin-top: 5vh;
+        border-bottom: 1px solid;  
+    }
+    .form2 button{
+        width: 16vw;
+        height: 5vh;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 5vh;
+        background-color: rgb(0, 119, 255);
+        color: white;
+        transition: 0.3s;
+        font-weight: 800;
+    }
+    .form input{
+        background: none;
+        border: none;
+        height: 5vh;
+    
+        outline: none;
+        text-align: center;
+        color:rgb(255, 255, 255);
+        font-size: 15px;
+        width: 15vw;
+        margin-top: 5vh;
+        border-bottom: 1px solid;  
+        font-weight: 800;
+        
+    }
+
+    .form button{
+        width: 16vw;
+        height: 5vh;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 5vh;
+        background-color: rgb(0, 119, 255);
+        color: white;
+        transition: 0.3s;
+        font-weight: 800;
+    }
+    .form2 button:hover{
+        background-color: rgb(0, 255, 64);
+        transform: scale(1.1);
+        box-shadow: 5px 5px 20px rgb(122, 122, 122);
+    }
+    button{
+        font-weight: 800;
+    }
+   
+    #all_people{
+            
+            width: 100vw;
+            height: 37vh;
+            font-weight: 800;
+
+            margin-top: 20vh;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+    }
+    .people3{
+        filter: blur(0);
+    }
+    .divpart{
+        width: 10vw;
+        height: 15vh;
+        background-color: rgb(0, 112, 101);
+        margin-left: 3.75vw;
+        text-align: center;
+        border-radius: 14px;
+        transition:  0.2s;
+display: flex;
+        font-weight: 800;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    .divpart:hover{
+        transform: scale(1.1);
+    }
+    .people2{
+        filter: blur(15px);
+    }
+    .select{
+        width: 20vw;
+        height: 10vh;
+        border: 0;
+        background-color: rgb(255, 0, 255);
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        border-radius: 12px;
+        margin-left: 40vw;
+        display: none;
+    }
+    .select2{
+        width: 20vw;
+        height: 10vh;
+        border: 0;
+        background-color: rgb(255, 0, 255);
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        border-radius: 12px;
+        margin-left: 40vw;
+        display: block;
+        animation: coming 1s;
+    }
+    @keyframes coming{
+        from{
+            transform: scale(0.1);
+
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+    
+
+
+    @keyframes slide{
+          0%{
+            transform: translateX(80vw);
+        }
+        100%{
+            transform: translateX(-180vw);
+
+        }
+    }
+
+    .ending{
+        background-color: rgb(139, 130, 238);
+        width: 50vw;
+        border-radius: 15px;
+        text-align: center;
+        overflow-y: hidden;
+        margin-left: 25vw;
+        position: relative;
+        z-index: 100;
+        height: 20vh;
+        margin-top: 20vh;
+        justify-content: center;
+        align-items: center;
+        display: none;
+       
+    }
+    .second,.third,.fourth,.fiveth,.sixth,.seventh,.eighth,.last{
+       
+      
+       opacity: 0;
+    }
+    
+    .first{
+        animation: go 0.4s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        
+       
+
+    }
+    @keyframes go{
+        100%{
+            
+            opacity: 0;
+            margin-top: -7vh;
+        }
+    }
+    .second{
+        animation: comehi,go2;
+        
+
+        animation-delay: 3.4s,5.4s;
+        animation-duration: 0.4s,0.4s;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes go2{
+        to{
+        opacity: 0;   
+        margin-top: -7vh;
+        }
+    }
+    @keyframes comehi{
+        
+        to{
+            
+            opacity: 1;
+         
+        }
+    }
+
+    .third{
+        animation: comehi2,go3;
+        
+
+        animation-delay: 5.4s,7s;
+        animation-duration: 0.4s,0.4s;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes go3{
+        to{
+        opacity: 0;margin-top: -7vh;
+        }
+    }
+    @keyframes comehi2{
+        
+        to{
+            
+            opacity: 1;
+           
+        }
+    }
+    .fourth{
+        animation: comehi3,go4;
+        
+
+        animation-delay: 7s,8s;
+        animation-duration: 0.4s,0.4s;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes go4{
+        to{
+        opacity: 0;margin-top: -7vh;
+        }
+    }
+    @keyframes comehi3{
+        
+        to{
+            
+            opacity: 1;
+           
+        }
+    }
+
+    .fiveth{
+        animation: comehi4,go5;
+        
+
+        animation-delay: 8s,9s;
+        animation-duration: 0.4s,0.4s;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes go5{
+        to{
+        opacity: 0;margin-top: -7vh;
+        }
+    }
+    @keyframes comehi4{
+        
+        to{
+            
+            opacity: 1;
+           
+        }
+    }
+
+    .sixth{
+        animation: comehi5,go6;
+        
+
+        animation-delay: 9s,10s;
+        animation-duration: 0.4s,0.4s;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes go6{
+        to{
+        opacity: 0;margin-top: -7vh;
+        }
+    }
+    @keyframes comehi5{
+        
+        to{
+            
+            opacity: 1;
+           
+        }
+    }
+    .seventh{
+        animation: comehi6,go7;
+        
+
+        animation-delay: 10s,11s;
+        animation-duration: 0.4s,0.4s;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes go7{
+        to{
+        opacity: 0;margin-top: -7vh;
+        }
+    }
+    @keyframes comehi6{
+        
+        to{
+            
+            opacity: 1;
+           
+        }
+    }
+    .eighth{
+        animation: comehi7,go8;
+        
+
+        animation-delay: 11s,13s;
+        animation-duration: 0.4s,0.4s;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes go8{
+        to{
+        opacity: 0;margin-top: -7vh;
+        }
+    }
+    @keyframes comehi7{
+        
+        to{
+            
+            opacity: 1;
+           
+        }
+    }
+    .last{
+        animation: comehi8,go9;
+        
+
+        animation-delay: 13s;
+        animation-duration: 0.4s;
+        animation-fill-mode: forwards;
+        
+
+    }
+   
+    @keyframes comehi8{
+        
+        to{
+            
+            opacity: 1;
+           
+        }
+    }
+
+
+
+    @media only screen and (max-width: 500px) {
+        .btn .button,.button1 , .button3{
+           width: 50vw;
+           margin-left: 25vw;
+           font-size: 20px;
+           height:15vh;
+       }
+     
+       footer{
+        font-size: 10px;
+        margin-top: 90vh;
+        width: 200px;
+        margin-left: 5vw;
+        height: 30px;
+        }
+        .btn .button,.button1 , .button3{
+       
+        border-radius: 10px;
+       
+        border: 0;
+        color: white;
+        background-color: rgb(0, 119, 255);
+        transition: 0.3s;
+        filter: blur(0);
+        font-weight: 800;
+    
+    
+        }
+        .button3{
+            animation-name: shake, glow-red;
+        animation-duration: 0.7s, 0.35s;
+        animation-iteration-count: 1, 2;
+        font-weight: 800;
+    
+    
+        }
+        @keyframes shake {
+            0%, 20%, 40%, 60%, 80% {
+            transform: translateX(8px);
+            }
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+            transform: translateX(-8px);
+            }
+        }
+        
+        @keyframes glow-red {
+            50% {
+            border-color: indianred;
+            }
+        }
+        .button2{
+            width: 15vw;
+        border-radius: 10px;
+        margin-left: 42.5vw;
+        margin-top: 5vh;
+        height:10vh;
+        border: 0;
+        color: white;
+        background-color: rgb(0, 119, 255);
+        transition: 0.3s;
+        filter: blur(14px);
+    
+        font-weight: 800;
+        }
+        .button:hover{
+            transform: scale(1.1);
+            opacity: 0.7;
+    
+            box-shadow: 5px 5px 20px rgb(122, 122, 122);
+        }
+        .button1:hover{
+            transform: scale(1.1);
+            opacity: 0.7;
+    
+            box-shadow: 5px 5px 20px rgb(122, 122, 122);
+        }
+        .form,.form1{  
+            background-color: rgb(53, 53, 53);
+            width: 80vw;
+            height: 60vh;
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 10vw;
+            border-radius: 17px;
+            align-items: center;
+            box-shadow: 5px 5px 20px rgb(122, 122, 122);
+            font-weight: 800;
+        display: none;
+        
+        }
+        .form2{
+            display: block;
+            background-color: rgb(53, 53, 53);
+            font-weight: 800;
+            width: 80vw;
+            height: 60vh;
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 10vw;
+            border-radius: 17px;
+            align-items: center;
+            box-shadow: 5px 5px 20px rgb(122, 122, 122);
+            animation: formcome 0.5s;
+            margin-top: -100px;
+            animation-fill-mode: forwards;
+            position:relative;
+            z-index: 100;
+        }
+
+        @keyframes formcome{
+        
+            to{
+                transform: translateY(100px);
+                
+            }
+        }
+        .form2 input{
+            background: none;
+            border: none;
+            height: 5vh;
+            font-weight: 800;
+        
+            outline: none;
+            text-align: center;
+            color:rgb(255, 255, 255);
+            font-size: 20px;
+            width: 60vw;
+            margin-top: 10vh;
+            border-bottom: 1px solid;  
+        }
+        .form2 button{
+            width: 50vw;
+            height: 10vh;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 5vh;
+            background-color: rgb(0, 119, 255);
+            color: white;
+            transition: 0.3s;
+            font-weight: 800;
+        }
+        .form input{
+            background: none;
+            border: none;
+            height: 5vh;
+        
+            outline: none;
+            text-align: center;
+            color:rgb(255, 255, 255);
+            font-size: 15px;
+            width: 15vw;
+            margin-top: 5vh;
+            border-bottom: 1px solid;  
+            font-weight: 800;
+            
+        }
+    
+        .form button{
+            width: 16vw;
+            height: 5vh;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 5vh;
+            background-color: rgb(0, 119, 255);
+            color: white;
+            transition: 0.3s;
+            font-weight: 800;
+        }
+        .form2 button:hover{
+            background-color: rgb(0, 255, 64);
+            transform: scale(1.1);
+            box-shadow: 5px 5px 20px rgb(122, 122, 122);
+        }
+        button{
+            font-weight: 800;
+        }
+       
+        #all_people{
+                
+                width: 100vw;
+                height: 60vh;
+                font-weight: 800;
+    
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                align-items: center;
+                justify-content: center;
+                font-weight: 800;
+        }
+        .people3{
+            filter: blur(0);
+        }
+        .divpart{
+            width: 35vw;
+            height: 8vh;
+            background-color: rgb(0, 112, 101);
+            margin-left: 0;
+            margin-top: 1vh;
+            text-align: center;
+            border-radius: 11   px;
+            transition:  0.2s;
+    
+            font-weight: 800;
+            align-items: center;
+            justify-content: center;
+            
+    
+        }
+        .divpart:hover{
+            transform: scale(1.1);
+        }
+        .people2{
+            filter: blur(15px);
+        }
+        .select{
+            width: 30vw;
+            height: 15vh;
+            border: 0;
+            background-color: rgb(255, 0, 255);
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            border-radius: 12px;
+            margin-left: 45vw;
+            display: none;
+            margin-top: 3vh;
+        }
+        .select2{
+            width: 30vw;
+            height: 15vh;
+            border: 0;
+            background-color: rgb(255, 0, 255);
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            border-radius: 12px;
+            margin-left: 35vw;
+            display: block;
+            margin-top: 2vh;
+            animation: coming 1s;
+        }
+        @keyframes coming{
+            from{
+                transform: scale(0.1);
+    
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+        
+    
+    
+        @keyframes slide{
+              0%{
+                transform: translateX(80vw);
+            }
+            100%{
+                transform: translateX(-180vw);
+    
+            }
+        }
+    
+        .ending{
+            background-color: rgb(139, 130, 238);
+            width: 90vw;
+            border-radius: 15px;
+            text-align: center;
+            overflow-y: hidden;
+            margin-left: 5vw;
+            position: relative;
+            z-index: 100;
+            height: 20vh;
+            margin-top: 20vh;
+            justify-content: center;
+            align-items: center;
+            display: none;
+           
+        }
+        .second,.third,.fourth,.fiveth,.sixth,.seventh,.eighth,.last{
+           
+          
+           opacity: 0;
+        }
+        
+        .first{
+            animation: go 0.4s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+            
+           
+    
+        }
+        @keyframes go{
+            100%{
+                
+                opacity: 0;
+                margin-top: -7vh;
+            }
+        }
+        .second{
+            animation: comehi,go2;
+            
+    
+            animation-delay: 3.4s,5.4s;
+            animation-duration: 0.4s,0.4s;
+            animation-fill-mode: forwards;
+    
+        }
+        @keyframes go2{
+            to{
+            opacity: 0;   
+            margin-top: -7vh;
+            }
+        }
+        @keyframes comehi{
+            
+            to{
+                
+                opacity: 1;
+             
+            }
+        }
+    
+        .third{
+            animation: comehi2,go3;
+            
+    
+            animation-delay: 5.4s,7s;
+            animation-duration: 0.4s,0.4s;
+            animation-fill-mode: forwards;
+    
+        }
+        @keyframes go3{
+            to{
+            opacity: 0;margin-top: -7vh;
+            }
+        }
+        @keyframes comehi2{
+            
+            to{
+                
+                opacity: 1;
+               
+            }
+        }
+        .fourth{
+            animation: comehi3,go4;
+            
+    
+            animation-delay: 7s,8s;
+            animation-duration: 0.4s,0.4s;
+            animation-fill-mode: forwards;
+    
+        }
+        @keyframes go4{
+            to{
+            opacity: 0;margin-top: -8vh;
+            }
+        }
+        @keyframes comehi3{
+            
+            to{
+                
+                opacity: 1;
+               
+            }
+        }
+    
+        .fiveth{
+            animation: comehi4,go5;
+            
+    
+            animation-delay: 8s,9s;
+            animation-duration: 0.4s,0.4s;
+            animation-fill-mode: forwards;
+    
+        }
+        @keyframes go5{
+            to{
+            opacity: 0;margin-top: -9vh;
+            }
+        }
+        @keyframes comehi4{
+            
+            to{
+                
+                opacity: 1;
+               
+            }
+        }
+    
+        .sixth{
+            animation: comehi5,go6;
+            
+    
+            animation-delay: 9s,10s;
+            animation-duration: 0.4s,0.4s;
+            animation-fill-mode: forwards;
+    
+        }
+        @keyframes go6{
+            to{
+            opacity: 0;margin-top: -8vh;
+            }
+        }
+        @keyframes comehi5{
+            
+            to{
+                
+                opacity: 1;
+               
+            }
+        }
+        .seventh{
+            animation: comehi6,go7;
+            
+    
+            animation-delay: 10s,11s;
+            animation-duration: 0.4s,0.4s;
+            animation-fill-mode: forwards;
+    
+        }
+        @keyframes go7{
+            to{
+            opacity: 0;margin-top: -9vh;
+            }
+        }
+        @keyframes comehi6{
+            
+            to{
+                
+                opacity: 1;
+               
+            }
+        }
+        .eighth{
+            animation: comehi7,go8;
+            
+    
+            animation-delay: 11s,13s;
+            animation-duration: 0.4s,0.4s;
+            animation-fill-mode: forwards;
+    
+        }
+        @keyframes go8{
+            to{
+            opacity: 0;margin-top: -9vh;
+            }
+        }
+        @keyframes comehi7{
+            
+            to{
+                
+                opacity: 1;
+               
+            }
+        }
+        .last{
+            animation: comehi8,go9;
+            
+    
+            animation-delay: 13s;
+            font-size: 20px;
+            animation-duration: 0.4s;               
+            animation-fill-mode: forwards;
+            
+    
+        }
+        
+       
+        @keyframes comehi8{
+            
+            to{
+                
+                opacity: 1;
+               
+            }
+        }
+    }
